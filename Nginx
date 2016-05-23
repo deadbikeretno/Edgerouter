@@ -1,1 +1,75 @@
 apt-get install nginx php5fpm
+
+
+sudo apt-get install -s php-fpm
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package php-fpm
+root@ubnt:~# sudo apt-get install -s php5-fpm
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  libmagic1 libonig2 libqdbm14 php5-common psmisc
+Suggested packages:
+  file php-pear
+The following NEW packages will be installed:
+  libmagic1 libonig2 libqdbm14 php5-common php5-fpm psmisc
+0 upgraded, 6 newly installed, 0 to remove and 17 not upgraded.
+Inst libmagic1 (5.11-2+deb7u8 Debian:7.10/oldstable [mips])
+Inst psmisc (22.19-1+deb7u1 Debian:7.10/oldstable [mips])
+Inst php5-common (5.4.45-0+deb7u2 Debian:7.10/oldstable [mips])
+Inst libonig2 (5.9.1-1 Debian:7.10/oldstable [mips])
+Inst libqdbm14 (1.8.78-2 Debian:7.10/oldstable [mips])
+Inst php5-fpm (5.4.45-0+deb7u2 Debian:7.10/oldstable [mips])
+Conf libmagic1 (5.11-2+deb7u8 Debian:7.10/oldstable [mips])
+Conf psmisc (22.19-1+deb7u1 Debian:7.10/oldstable [mips])
+Conf php5-common (5.4.45-0+deb7u2 Debian:7.10/oldstable [mips])
+Conf libonig2 (5.9.1-1 Debian:7.10/oldstable [mips])
+Conf libqdbm14 (1.8.78-2 Debian:7.10/oldstable [mips])
+Conf php5-fpm (5.4.45-0+deb7u2 Debian:7.10/oldstable [mips])
+root@ubnt:~# sudo apt-get install php5-fpm
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  libmagic1 libonig2 libqdbm14 php5-common psmisc
+Suggested packages:
+  file php-pear
+The following NEW packages will be installed:
+  libmagic1 libonig2 libqdbm14 php5-common php5-fpm psmisc
+0 upgraded, 6 newly installed, 0 to remove and 17 not upgraded.
+Need to get 3793 kB of archives.
+After this operation, 13.5 MB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://http.us.debian.org/debian/ wheezy/main libmagic1 mips 5.11-2+deb7u8 [203 kB]
+Get:2 http://http.us.debian.org/debian/ wheezy/main psmisc mips 22.19-1+deb7u1 [129 kB]
+Get:3 http://http.us.debian.org/debian/ wheezy/main php5-common mips 5.4.45-0+deb7u2 [622 kB]
+Get:4 http://http.us.debian.org/debian/ wheezy/main libonig2 mips 5.9.1-1 [139 kB]
+Get:5 http://http.us.debian.org/debian/ wheezy/main libqdbm14 mips 1.8.78-2 [122 kB]
+Get:6 http://http.us.debian.org/debian/ wheezy/main php5-fpm mips 5.4.45-0+deb7u2 [2578 kB]
+Fetched 3793 kB in 13s (291 kB/s)                                              
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libmagic1:mips.
+(Reading database ... 35012 files and directories currently installed.)
+Unpacking libmagic1:mips (from .../libmagic1_5.11-2+deb7u8_mips.deb) ...
+Selecting previously unselected package psmisc.
+Unpacking psmisc (from .../psmisc_22.19-1+deb7u1_mips.deb) ...
+dpkg: error processing /var/cache/apt/archives/psmisc_22.19-1+deb7u1_mips.deb (--unpack):
+ trying to overwrite '/usr/bin/killall', which is also in package ubnt-debian 9:0.1.16
+Selecting previously unselected package php5-common.
+Unpacking php5-common (from .../php5-common_5.4.45-0+deb7u2_mips.deb) ...
+dpkg: error processing /var/cache/apt/archives/php5-common_5.4.45-0+deb7u2_mips.deb (--unpack):
+ trying to overwrite '/etc/cron.d/php5', which is also in package ubnt-gui-common 0.1.11
+dpkg-deb: error: subprocess paste was killed by signal (Broken pipe)
+Selecting previously unselected package libonig2.
+Unpacking libonig2 (from .../libonig2_5.9.1-1_mips.deb) ...
+Selecting previously unselected package libqdbm14.
+Unpacking libqdbm14 (from .../libqdbm14_1.8.78-2_mips.deb) ...
+Selecting previously unselected package php5-fpm.
+Unpacking php5-fpm (from .../php5-fpm_5.4.45-0+deb7u2_mips.deb) ...
+Errors were encountered while processing:
+ /var/cache/apt/archives/psmisc_22.19-1+deb7u1_mips.deb
+ /var/cache/apt/archives/php5-common_5.4.45-0+deb7u2_mips.deb
+E: Sub-process /usr/bin/dpkg returned an error code (1)
