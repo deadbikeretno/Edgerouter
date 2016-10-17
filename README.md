@@ -1,6 +1,6 @@
 # Edgerouter
 
-# sudo apt-get update
+** sudo apt-get update **
 if you got error  
 ```
 W: Failed to fetch http://security.debian.org/dists/wheezy/updates/Release  Unable to find expected entry 'main/binary-mips/Packages' in Release file (Wrong sources.list entry or malformed file)
