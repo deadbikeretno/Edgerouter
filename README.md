@@ -1,6 +1,6 @@
 # Edgerouter  
 
-** sudo apt-get update**
+__sudo apt-get update__
 <br>
 if you got error  
 ```
